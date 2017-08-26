@@ -1,4 +1,4 @@
-package com.ryuusen.kafka.client.producer.core;
+package com.ryuusen.kafka.client.producer;
 
 import com.ryuusen.kafka.client.IClientConfigBuilder;
 

@@ -1,4 +1,4 @@
-package com.ryuusen.kafka.client.consumer.core;
+package com.ryuusen.kafka.client.consumer;
 
 import java.util.Collection;
 import java.util.Collections;
