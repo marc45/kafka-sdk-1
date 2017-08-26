@@ -2,14 +2,34 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ryuusen.kafka</groupId>
-	<artifactId>kafka-sdk</artifactId>
-	<version>10.2_0.0.1-SNAPSHOT</version>
+	<artifactId>kafka-sdk-0.10.2</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<kafka.version>0.11.0.0</kafka.version>
+		<jackson.version>2.8.6</jackson.version>
+	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.kafka</groupId>
 			<artifactId>kafka-clients</artifactId>
-			<version>0.10.2.1</version>
+			<version>${kafka.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+				<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
 		</dependency>
 	</dependencies>
 
@@ -32,7 +52,7 @@
 		</plugins>
 	</build>
 	<scm>
-		<developerConnection>scm:git:https://github.com/ruusen/kafka-sdk.git</developerConnection>
+		<developerConnection>scm:git:https://github.com/ryuusen/kafka-sdk.git</developerConnection>
 	</scm>
 </project>
 
